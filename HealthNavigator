@@ -1,0 +1,111 @@
+//"Package.json" @React native, Snacks-Expo
+//Before use this code, please install these package on the package.json.
+/*{
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.3",
+    "react-native-paper": "4.9.2",
+    "react-native-screens": "3.31.1",
+    "react-native-webview": "13.8.6",
+    "react-native-reanimated": "~3.10.1",
+    "@react-navigation/drawer": "6.7.2",
+    "@react-navigation/native": "6.0.0",
+    "react-native-gesture-handler": "~2.16.1",
+    "react-native-safe-area-context": "4.10.5"
+  }
+}
+*/
+
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView, Image} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'; // 네비게이션 컨테이너 
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer'; // Drawer 네비게이션
+import { WebView } from 'react-native-webview';
+
+function Page1({ navigation }) {
+  return (
+    <ScrollView style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'light purple'}}>
+      <Text style={styles.paragraph}>Health Navigator</Text>
+      <Text style={{textAlign:'center'}}>Take care your health !</Text>
+      <Image style={styles.logo} source={require('./assets/medical_information.png')} />
+    </ScrollView>
+  );
+}
+
+function Page2({ navigation }) {
+  return (
+    <View style={styles.web_container}>
+      <Text style={{color:'black', fontSize: 20, fontWeight: 'bold', margin:10, textAlign: 'center'}}>잘못된 의학지식 바로잡기</Text>
+      <WebView source={{ uri: 'https://www.weknew.com/' }}/>
+    </View> 
+  );
+}
+
+const Page3 = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'white' }}>
+    <Text style={styles.paragraph}>Hospital in your area</Text>
+    <Image style={styles.map} source={require('./assets/map.png')} />
+    </View>
+  );
+}
+
+const Page4 = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
+      <Text style={styles.paragraph}>Take care your health !</Text>
+    </View>
+  );
+}
+
+function CustomDrawerContent (props) {
+  return (
+    <DrawerContentScrollView {...props} style={{backgroundColor:"yellowgreen"}}>
+      <DrawerItemList {...props}/>
+      <DrawerItem label="Copyright" onPress={() => alert("Copyright 2024. PKNU all right reserved.")} />
+    </DrawerContentScrollView>
+  );
+}
+
+const Drawer = createDrawerNavigator(); // Drawer Navigation함수를 Drawer변수명으로 저장
+
+const App = () => {
+  return (
+    <NavigationContainer>
+    <Drawer.Navigator initialRouteName="P1" drawerContent={(props) => <CustomDrawerContent {...props} />}>
+      <Drawer.Screen name="Health Navigator" component={Page1} />
+      <Drawer.Screen name="Medical Information" component={Page2} />
+      <Drawer.Screen name="Hospital Information" component={Page3} />
+      <Drawer.Screen name="Community" component={Page4} />
+    </Drawer.Navigator>
+    </NavigationContainer>
+  );
+};
+export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#ecf0f1',
+    padding: 8,
+  },
+  paragraph: {
+    margin: 20,
+    fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'pink',
+  },
+  logo: {
+    height: 450,
+    width:300,
+    margin: 40
+  },
+  web_container: {
+    flex: 1,
+  },
+  map:{
+    height:300,
+    width:350,
+  }
+});
