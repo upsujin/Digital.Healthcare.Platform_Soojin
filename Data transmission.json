@@ -1,22 +1,22 @@
 [
 {
 "id": 1,
-"name": "짱구",
+"name": "hello",
 "description": "This is the description for Heart."
 },
 {
 "id": 2,
-"name": "짱아",
+"name": "hello",
 "description": "This is the description for Brain."
 },
 {
 "id": 3,
-"name": "철수",
+"name": "hello",
 "description": "This is the description for Muscle."
 },
 {
 "id": 4,
-"name": "멩구",
+"name": "hello",
 "description": "This is the description for Skin!!!!!!"
 }
 ]
