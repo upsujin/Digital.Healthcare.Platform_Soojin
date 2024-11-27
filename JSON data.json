@@ -1,22 +1,22 @@
 [ 
   {
     "id": 1,
-    "name": "Heart",
-    "description": "This is the description for Heart."
+    "name": "증상별",
+    "description": "증상에 따른 병원을 알려줄게요"
   },
   {
     "id": 2,
-    "name": "Brain",
-    "description": "This is the description for Brain."
+    "name": "질병별",
+    "description": "질병에 따른 병원을 알려줄게요"
   },
   {
     "id": 3,
-    "name": "Muscle",
-    "description": "This is the description for Muscle."
+    "name": "지역별",
+    "description": "지역에 따른 병원을 알려줄게요"
   },
   {
     "id": 4,
-    "name": "Skin",
-    "description": "This is the description for Skin!!!!!!"
+    "name": "내주변",
+    "description": "내주변에 있는 병원을 알려줄게요"
   }
  ]
