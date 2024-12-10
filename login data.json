@@ -1,5 +1,11 @@
 [
   {
+    "email": "Upsoojin",
+    "password": "Password345",
+    "name": "Nobel",
+    "profile": "https://img.jagranjosh.com/images/2024/October/10102024/nobel-prize-in-literature-2024-.webp"
+  },
+  {
     "email": "doonge@example.com",
     "password": "password123",
     "name": "Doongee",
