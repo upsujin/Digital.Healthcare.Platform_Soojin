@@ -113,7 +113,6 @@
       "specialty": "신경과"
     }
   ],
-  {
   "두통": [
     {
       "disease": "폐경(Menopause)",
@@ -548,7 +547,6 @@
     "specialty": "응급의학과"
   }
 ],
-{
   "지남력 장애": [
     {
       "disease": "치매(dementia)",
