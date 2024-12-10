@@ -47,12 +47,6 @@
       "specialty": "신경과"
     },
     {
-      "disease": "기뇌증(Pneumocephalus)",
-      "symptoms": "무증상, 피로감, 언어장애, 두통, 어지러움",
-      "associatedDiseases": "잠수병",
-      "specialty": "응급의학과"
-    },
-    {
       "disease": "뇌경색(Cerebral infarction)",
       "symptoms": "의식 변화, 언어장애, 시야장애, 반신마비, 어지러움",
       "associatedDiseases": "뇌졸중, 일과성 뇌허혈증",
@@ -115,22 +109,10 @@
   ],
   "두통": [
     {
-      "disease": "폐경(Menopause)",
-      "symptoms": "관절통, 성욕감퇴, 가슴 두근거림, 안면홍조, 피로감, 감정 변화, 건망증, 두통, 불면증, 불안, 발한, 요통",
-      "associatedDiseases": "복압성 요실금, 대퇴 골절, 우울증, 골다공증, 병리적 골절, 폐경기 및 여성의 갱년기 상태, 급성 심근경색증, 심계항진, 요실금",
-      "specialty": "내분비내과, 산부인과"
-    },
-    {
       "disease": "결핵성 수막염(Tuberculous meningitis)",
       "symptoms": "눈운동신경마비, 열, 혼수, 졸림, 시야장애, 두통",
       "associatedDiseases": "후천성 면역결핍증",
       "specialty": "감염내과, 신경과"
-    },
-    {
-      "disease": "기뇌증(Pneumocephalus)",
-      "symptoms": "무증상, 피로감, 언어장애, 두통, 어지러움",
-      "associatedDiseases": "잠수병",
-      "specialty": "응급의학과"
     },
     {
       "disease": "뇌졸중(Cerebrovascular disease)",
