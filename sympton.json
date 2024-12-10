@@ -2,14 +2,12 @@
   "건망증": [
     {
       "disease": "치매(dementia)",
-      "image": "image/dementia.jpg",
       "symptoms": "지남력 장애, 성격의 변화, 감정 변화, 혼돈, 언어장애, 기억장애, 건망증",
       "associatedDiseases": "비정형 파킨슨 증후군, 알츠하이머병, 혈관성 치매",
       "specialty": "노년내과, 신경과, 정신건강의학과"
     },
     {
       "disease": "크로이츠펠트-야콥병(Creutzfeldt-Jakob disease)",
-      "image": "image/Creutzfeldt-Jakob disease.jpg",
       "symptoms": "운동장애, 방향감각 상실, 인지장애, 건망증, 근육경련",
       "associatedDiseases": "치매",
       "specialty": "신경과, 소아신경과"
@@ -18,14 +16,12 @@
   "편두통": [
     {
       "disease": "뇌 동정맥 기형(Cerebral arteriovenous malformation)",
-      "image": "image/Cerebral arteriovenous malformation.jpg",
       "symptoms": "뇌전증 발작, 박동성 통증, 편두통, 뇌출혈, 두통",
       "associatedDiseases": "자발성 두개강 내 출혈, 뇌졸중, 뇌경색",
       "specialty": "신경외과, 소아신경외과"
     },
     {
       "disease": "측두동맥염(Temporal arteritis)",
-      "image": "image/Temporal arteritis.jpg",
       "symptoms": "눈의 충혈, 눈의 통증, 시력 감소, 편두통, 근육통, 식욕부진",
       "associatedDiseases": "혈관염, 뇌경색",
       "specialty": "혈관외과, 심장외과"
